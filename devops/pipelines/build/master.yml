@@ -47,7 +47,7 @@ steps:
     projects: |
      $(Build.SourcesDirectory)\src\$(RootNamespace)\$(RootNamespace).csproj
     custom: pack
-    arguments: '--no-build --output $(Build.ArtifactStagingDirectory) --verbosity Detailed --configuration $(BuildConfiguration) /p:Version=$(Version)-$(Build.BuildNumber)'
+    arguments: '--no-build --output $(Build.ArtifactStagingDirectory) --verbosity Detailed --configuration $(BuildConfiguration) /p:Version=$(Version)'
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
