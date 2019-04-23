@@ -1,0 +1,62 @@
+name: rc-$(SourceBranchName)-$(Date:yyyyMMdd)-$(Rev:r)
+
+trigger:
+  batch: true
+  branches:
+    include:
+    - release/*
+
+
+pool:
+  name: 'Hosted VS2017'
+
+
+variables:
+  BuildPlatform: 'Any CPU'
+  BuildConfiguration: 'Debug'
+  RootNamespace: 'Upcloud'
+  Version: '1.2.8'
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+
+
+steps:
+- task: DotNetCoreInstaller@0
+  displayName: 'Use .NET Core sdk 2.2.104'
+  inputs:
+    version: 2.2.104
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet restore: All'
+  inputs:
+    command: restore
+    projects: '**/*.csproj'
+    vstsFeed: '5b196d6e-b98f-4738-8bb4-097767bb2372'
+    includeNuGetOrg: false
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet build'
+  inputs:
+    command: custom
+    projects: |
+     $(Build.SourcesDirectory)\src\$(RootNamespace)\$(RootNamespace).csproj
+    custom: build
+    arguments: '--no-restore --verbosity Detailed --configuration $(BuildConfiguration) /p:Version=$(Version)-$(Build.BuildNumber)'
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet pack'
+  inputs:
+    command: custom
+    projects: |
+     $(Build.SourcesDirectory)\src\$(RootNamespace)\$(RootNamespace).csproj
+    custom: pack
+    arguments: '--no-build --output $(Build.ArtifactStagingDirectory) --verbosity Detailed --configuration $(BuildConfiguration) /p:Version=$(Version)-$(Build.BuildNumber)'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet push'
+  inputs:
+    command: push
+    publishVstsFeed: '5b196d6e-b98f-4738-8bb4-097767bb2372'
+
