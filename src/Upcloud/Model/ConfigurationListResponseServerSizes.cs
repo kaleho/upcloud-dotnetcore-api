@@ -40,7 +40,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets ServerSize
         /// </summary>
-        [DataMember(Name="server_size", EmitDefaultValue=true)]
+        [DataMember(Name="server_size", EmitDefaultValue=false)]
         public List<ServerSize> ServerSize { get; set; }
 
         /// <summary>

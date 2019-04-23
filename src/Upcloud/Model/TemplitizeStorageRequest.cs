@@ -41,7 +41,7 @@ namespace Upcloud.Model
         /// A short description.
         /// </summary>
         /// <value>A short description.</value>
-        [DataMember(Name="title", EmitDefaultValue=true)]
+        [DataMember(Name="title", EmitDefaultValue=false)]
         public string Title { get; set; }
 
         /// <summary>

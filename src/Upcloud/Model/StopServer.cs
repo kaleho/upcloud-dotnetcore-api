@@ -40,7 +40,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets _StopServer
         /// </summary>
-        [DataMember(Name="stop_server", EmitDefaultValue=true)]
+        [DataMember(Name="stop_server", EmitDefaultValue=false)]
         public StopServerRequest _StopServer { get; set; }
 
         /// <summary>

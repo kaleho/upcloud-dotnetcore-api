@@ -51,7 +51,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets BootDisk
         /// </summary>
-        [DataMember(Name="boot_disk", EmitDefaultValue=true)]
+        [DataMember(Name="boot_disk", EmitDefaultValue=false)]
         public BootDiskEnum? BootDisk { get; set; }
         /// <summary>
         /// Defines Tier
@@ -76,7 +76,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Tier
         /// </summary>
-        [DataMember(Name="tier", EmitDefaultValue=true)]
+        [DataMember(Name="tier", EmitDefaultValue=false)]
         public TierEnum? Tier { get; set; }
         /// <summary>
         /// Defines Action
@@ -107,7 +107,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Action
         /// </summary>
-        [DataMember(Name="action", EmitDefaultValue=true)]
+        [DataMember(Name="action", EmitDefaultValue=false)]
         public ActionEnum? Action { get; set; }
         /// <summary>
         /// Defines PartOfPlan
@@ -132,7 +132,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets PartOfPlan
         /// </summary>
-        [DataMember(Name="part_of_plan", EmitDefaultValue=true)]
+        [DataMember(Name="part_of_plan", EmitDefaultValue=false)]
         public PartOfPlanEnum? PartOfPlan { get; set; }
         /// <summary>
         /// Defines Type
@@ -157,7 +157,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Type
         /// </summary>
-        [DataMember(Name="type", EmitDefaultValue=true)]
+        [DataMember(Name="type", EmitDefaultValue=false)]
         public TypeEnum? Type { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="StorageDevice" /> class.
@@ -215,7 +215,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Title
         /// </summary>
-        [DataMember(Name="title", EmitDefaultValue=true)]
+        [DataMember(Name="title", EmitDefaultValue=false)]
         public string Title { get; set; }
 
 
@@ -223,7 +223,7 @@ namespace Upcloud.Model
         /// The size of the storage device in gigabytes.
         /// </summary>
         /// <value>The size of the storage device in gigabytes.</value>
-        [DataMember(Name="size", EmitDefaultValue=true)]
+        [DataMember(Name="size", EmitDefaultValue=false)]
         public decimal? Size { get; set; }
 
 
@@ -231,26 +231,26 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Address
         /// </summary>
-        [DataMember(Name="address", EmitDefaultValue=true)]
+        [DataMember(Name="address", EmitDefaultValue=false)]
         public string Address { get; set; }
 
 
         /// <summary>
         /// Gets or Sets Storage
         /// </summary>
-        [DataMember(Name="storage", EmitDefaultValue=true)]
+        [DataMember(Name="storage", EmitDefaultValue=false)]
         public string Storage { get; set; }
 
         /// <summary>
         /// Gets or Sets StorageSize
         /// </summary>
-        [DataMember(Name="storage_size", EmitDefaultValue=true)]
+        [DataMember(Name="storage_size", EmitDefaultValue=false)]
         public decimal? StorageSize { get; set; }
 
         /// <summary>
         /// Gets or Sets StorageTitle
         /// </summary>
-        [DataMember(Name="storage_title", EmitDefaultValue=true)]
+        [DataMember(Name="storage_title", EmitDefaultValue=false)]
         public string StorageTitle { get; set; }
 
 

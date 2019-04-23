@@ -40,7 +40,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Account
         /// </summary>
-        [DataMember(Name="account", EmitDefaultValue=true)]
+        [DataMember(Name="account", EmitDefaultValue=false)]
         public Account Account { get; set; }
 
         /// <summary>

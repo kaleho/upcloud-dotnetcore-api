@@ -40,7 +40,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Zone
         /// </summary>
-        [DataMember(Name="zone", EmitDefaultValue=true)]
+        [DataMember(Name="zone", EmitDefaultValue=false)]
         public List<Zone> Zone { get; set; }
 
         /// <summary>

@@ -53,7 +53,7 @@ namespace Upcloud.Model
         /// The direction of network traffic this rule will be applied to.
         /// </summary>
         /// <value>The direction of network traffic this rule will be applied to.</value>
-        [DataMember(Name="direction", EmitDefaultValue=true)]
+        [DataMember(Name="direction", EmitDefaultValue=false)]
         public DirectionEnum? Direction { get; set; }
         /// <summary>
         /// Action to take if the rule conditions are met.
@@ -86,12 +86,12 @@ namespace Upcloud.Model
         /// Action to take if the rule conditions are met.
         /// </summary>
         /// <value>Action to take if the rule conditions are met.</value>
-        [DataMember(Name="action", EmitDefaultValue=true)]
+        [DataMember(Name="action", EmitDefaultValue=false)]
         public ActionEnum? Action { get; set; }
         /// <summary>
         /// Gets or Sets Family
         /// </summary>
-        [DataMember(Name="family", EmitDefaultValue=true)]
+        [DataMember(Name="family", EmitDefaultValue=false)]
         public AddressFamily? Family { get; set; }
         /// <summary>
         /// The protocol this rule will be applied to.
@@ -124,7 +124,7 @@ namespace Upcloud.Model
         /// The protocol this rule will be applied to.
         /// </summary>
         /// <value>The protocol this rule will be applied to.</value>
-        [DataMember(Name="protocol", EmitDefaultValue=true)]
+        [DataMember(Name="protocol", EmitDefaultValue=false)]
         public ProtocolEnum? Protocol { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="FirewallRule" /> class.
@@ -198,7 +198,7 @@ namespace Upcloud.Model
         /// Add the firewall rule to this position in the server&#39;s firewall list.
         /// </summary>
         /// <value>Add the firewall rule to this position in the server&#39;s firewall list.</value>
-        [DataMember(Name="position", EmitDefaultValue=true)]
+        [DataMember(Name="position", EmitDefaultValue=false)]
         public decimal? Position { get; set; }
 
 
@@ -207,70 +207,70 @@ namespace Upcloud.Model
         /// The ICMP type.
         /// </summary>
         /// <value>The ICMP type.</value>
-        [DataMember(Name="icmp_type", EmitDefaultValue=true)]
+        [DataMember(Name="icmp_type", EmitDefaultValue=false)]
         public string IcmpType { get; set; }
 
         /// <summary>
         /// The destination address range starts from this address.
         /// </summary>
         /// <value>The destination address range starts from this address.</value>
-        [DataMember(Name="destination_address_start", EmitDefaultValue=true)]
+        [DataMember(Name="destination_address_start", EmitDefaultValue=false)]
         public string DestinationAddressStart { get; set; }
 
         /// <summary>
         /// The destination address range ends to this address.
         /// </summary>
         /// <value>The destination address range ends to this address.</value>
-        [DataMember(Name="destination_address_end", EmitDefaultValue=true)]
+        [DataMember(Name="destination_address_end", EmitDefaultValue=false)]
         public string DestinationAddressEnd { get; set; }
 
         /// <summary>
         /// The destination port range starts from this port number.
         /// </summary>
         /// <value>The destination port range starts from this port number.</value>
-        [DataMember(Name="destination_port_start", EmitDefaultValue=true)]
+        [DataMember(Name="destination_port_start", EmitDefaultValue=false)]
         public decimal? DestinationPortStart { get; set; }
 
         /// <summary>
         /// The destination port range ends to this port number.
         /// </summary>
         /// <value>The destination port range ends to this port number.</value>
-        [DataMember(Name="destination_port_end", EmitDefaultValue=true)]
+        [DataMember(Name="destination_port_end", EmitDefaultValue=false)]
         public decimal? DestinationPortEnd { get; set; }
 
         /// <summary>
         /// The source address range starts from this address.
         /// </summary>
         /// <value>The source address range starts from this address.</value>
-        [DataMember(Name="source_address_start", EmitDefaultValue=true)]
+        [DataMember(Name="source_address_start", EmitDefaultValue=false)]
         public string SourceAddressStart { get; set; }
 
         /// <summary>
         /// The source address range ends to this address.
         /// </summary>
         /// <value>The source address range ends to this address.</value>
-        [DataMember(Name="source_address_end", EmitDefaultValue=true)]
+        [DataMember(Name="source_address_end", EmitDefaultValue=false)]
         public string SourceAddressEnd { get; set; }
 
         /// <summary>
         /// The source port range starts from this port number.
         /// </summary>
         /// <value>The source port range starts from this port number.</value>
-        [DataMember(Name="source_port_start", EmitDefaultValue=true)]
+        [DataMember(Name="source_port_start", EmitDefaultValue=false)]
         public decimal? SourcePortStart { get; set; }
 
         /// <summary>
         /// The source port range ends to this port number.
         /// </summary>
         /// <value>The source port range ends to this port number.</value>
-        [DataMember(Name="source_port_end", EmitDefaultValue=true)]
+        [DataMember(Name="source_port_end", EmitDefaultValue=false)]
         public decimal? SourcePortEnd { get; set; }
 
         /// <summary>
         /// Freeform comment string for the rule.
         /// </summary>
         /// <value>Freeform comment string for the rule.</value>
-        [DataMember(Name="comment", EmitDefaultValue=true)]
+        [DataMember(Name="comment", EmitDefaultValue=false)]
         public string Comment { get; set; }
 
         /// <summary>

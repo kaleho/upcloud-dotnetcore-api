@@ -40,7 +40,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets FirewallRule
         /// </summary>
-        [DataMember(Name="firewall_rule", EmitDefaultValue=true)]
+        [DataMember(Name="firewall_rule", EmitDefaultValue=false)]
         public FirewallRule FirewallRule { get; set; }
 
         /// <summary>

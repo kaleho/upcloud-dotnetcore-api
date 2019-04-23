@@ -74,109 +74,109 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name="name", EmitDefaultValue=true)]
+        [DataMember(Name="name", EmitDefaultValue=false)]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets or Sets Firewall
         /// </summary>
-        [DataMember(Name="firewall", EmitDefaultValue=true)]
+        [DataMember(Name="firewall", EmitDefaultValue=false)]
         public Price Firewall { get; set; }
 
         /// <summary>
         /// Gets or Sets IoRequestBackup
         /// </summary>
-        [DataMember(Name="io_request_backup", EmitDefaultValue=true)]
+        [DataMember(Name="io_request_backup", EmitDefaultValue=false)]
         public Price IoRequestBackup { get; set; }
 
         /// <summary>
         /// Gets or Sets IoRequestHdd
         /// </summary>
-        [DataMember(Name="io_request_hdd", EmitDefaultValue=true)]
+        [DataMember(Name="io_request_hdd", EmitDefaultValue=false)]
         public Price IoRequestHdd { get; set; }
 
         /// <summary>
         /// Gets or Sets IoRequestMaxiops
         /// </summary>
-        [DataMember(Name="io_request_maxiops", EmitDefaultValue=true)]
+        [DataMember(Name="io_request_maxiops", EmitDefaultValue=false)]
         public Price IoRequestMaxiops { get; set; }
 
         /// <summary>
         /// Gets or Sets Ipv4Address
         /// </summary>
-        [DataMember(Name="ipv4_address", EmitDefaultValue=true)]
+        [DataMember(Name="ipv4_address", EmitDefaultValue=false)]
         public Price Ipv4Address { get; set; }
 
         /// <summary>
         /// Gets or Sets Ipv6Address
         /// </summary>
-        [DataMember(Name="ipv6_address", EmitDefaultValue=true)]
+        [DataMember(Name="ipv6_address", EmitDefaultValue=false)]
         public Price Ipv6Address { get; set; }
 
         /// <summary>
         /// Gets or Sets PublicIpv4BandwidthIn
         /// </summary>
-        [DataMember(Name="public_ipv4_bandwidth_in", EmitDefaultValue=true)]
+        [DataMember(Name="public_ipv4_bandwidth_in", EmitDefaultValue=false)]
         public Price PublicIpv4BandwidthIn { get; set; }
 
         /// <summary>
         /// Gets or Sets PublicIpv4BandwidthOut
         /// </summary>
-        [DataMember(Name="public_ipv4_bandwidth_out", EmitDefaultValue=true)]
+        [DataMember(Name="public_ipv4_bandwidth_out", EmitDefaultValue=false)]
         public Price PublicIpv4BandwidthOut { get; set; }
 
         /// <summary>
         /// Gets or Sets PublicIpv6BandwidthIn
         /// </summary>
-        [DataMember(Name="public_ipv6_bandwidth_in", EmitDefaultValue=true)]
+        [DataMember(Name="public_ipv6_bandwidth_in", EmitDefaultValue=false)]
         public Price PublicIpv6BandwidthIn { get; set; }
 
         /// <summary>
         /// Gets or Sets PublicIpv6BandwidthOut
         /// </summary>
-        [DataMember(Name="public_ipv6_bandwidth_out", EmitDefaultValue=true)]
+        [DataMember(Name="public_ipv6_bandwidth_out", EmitDefaultValue=false)]
         public Price PublicIpv6BandwidthOut { get; set; }
 
         /// <summary>
         /// Gets or Sets ServerCore
         /// </summary>
-        [DataMember(Name="server_core", EmitDefaultValue=true)]
+        [DataMember(Name="server_core", EmitDefaultValue=false)]
         public Price ServerCore { get; set; }
 
         /// <summary>
         /// Gets or Sets ServerMemory
         /// </summary>
-        [DataMember(Name="server_memory", EmitDefaultValue=true)]
+        [DataMember(Name="server_memory", EmitDefaultValue=false)]
         public Price ServerMemory { get; set; }
 
         /// <summary>
         /// Gets or Sets StorageBackup
         /// </summary>
-        [DataMember(Name="storage_backup", EmitDefaultValue=true)]
+        [DataMember(Name="storage_backup", EmitDefaultValue=false)]
         public Price StorageBackup { get; set; }
 
         /// <summary>
         /// Gets or Sets StorageHdd
         /// </summary>
-        [DataMember(Name="storage_hdd", EmitDefaultValue=true)]
+        [DataMember(Name="storage_hdd", EmitDefaultValue=false)]
         public Price StorageHdd { get; set; }
 
         /// <summary>
         /// Gets or Sets StorageMaxiops
         /// </summary>
-        [DataMember(Name="storage_maxiops", EmitDefaultValue=true)]
+        [DataMember(Name="storage_maxiops", EmitDefaultValue=false)]
         public Price StorageMaxiops { get; set; }
 
         /// <summary>
         /// Gets or Sets ServerPlan1xCPU1GB
         /// </summary>
-        [DataMember(Name="server_plan_1xCPU-1GB", EmitDefaultValue=true)]
+        [DataMember(Name="server_plan_1xCPU-1GB", EmitDefaultValue=false)]
         public Price ServerPlan1xCPU1GB { get; set; }
 
         /// <summary>
         /// Gets or Sets ServerPlan2xCPU2GB
         /// </summary>
-        [DataMember(Name="server_plan_2xCPU-2GB", EmitDefaultValue=true)]
+        [DataMember(Name="server_plan_2xCPU-2GB", EmitDefaultValue=false)]
         public Price ServerPlan2xCPU2GB { get; set; }
 
         /// <summary>

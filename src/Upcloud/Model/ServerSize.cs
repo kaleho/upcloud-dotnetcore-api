@@ -42,13 +42,13 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets CoreNumber
         /// </summary>
-        [DataMember(Name="core_number", EmitDefaultValue=true)]
+        [DataMember(Name="core_number", EmitDefaultValue=false)]
         public decimal? CoreNumber { get; set; }
 
         /// <summary>
         /// Gets or Sets MemoryAmount
         /// </summary>
-        [DataMember(Name="memory_amount", EmitDefaultValue=true)]
+        [DataMember(Name="memory_amount", EmitDefaultValue=false)]
         public decimal? MemoryAmount { get; set; }
 
         /// <summary>

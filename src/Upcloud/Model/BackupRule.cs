@@ -87,7 +87,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Interval
         /// </summary>
-        [DataMember(Name="interval", EmitDefaultValue=true)]
+        [DataMember(Name="interval", EmitDefaultValue=false)]
         public IntervalEnum? Interval { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="BackupRule" /> class.
@@ -106,13 +106,13 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Time
         /// </summary>
-        [DataMember(Name="time", EmitDefaultValue=true)]
+        [DataMember(Name="time", EmitDefaultValue=false)]
         public string Time { get; set; }
 
         /// <summary>
         /// Gets or Sets Retention
         /// </summary>
-        [DataMember(Name="retention", EmitDefaultValue=true)]
+        [DataMember(Name="retention", EmitDefaultValue=false)]
         public decimal? Retention { get; set; }
 
         /// <summary>

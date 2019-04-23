@@ -42,13 +42,13 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Amount
         /// </summary>
-        [DataMember(Name="amount", EmitDefaultValue=true)]
+        [DataMember(Name="amount", EmitDefaultValue=false)]
         public decimal? Amount { get; set; }
 
         /// <summary>
         /// Gets or Sets _Price
         /// </summary>
-        [DataMember(Name="price", EmitDefaultValue=true)]
+        [DataMember(Name="price", EmitDefaultValue=false)]
         public decimal? _Price { get; set; }
 
         /// <summary>

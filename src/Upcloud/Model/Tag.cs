@@ -58,20 +58,20 @@ namespace Upcloud.Model
         /// The new tag
         /// </summary>
         /// <value>The new tag</value>
-        [DataMember(Name="name", EmitDefaultValue=true)]
+        [DataMember(Name="name", EmitDefaultValue=false)]
         public string Name { get; set; }
 
         /// <summary>
         /// Description of the tag
         /// </summary>
         /// <value>Description of the tag</value>
-        [DataMember(Name="description", EmitDefaultValue=true)]
+        [DataMember(Name="description", EmitDefaultValue=false)]
         public string Description { get; set; }
 
         /// <summary>
         /// Gets or Sets Servers
         /// </summary>
-        [DataMember(Name="servers", EmitDefaultValue=true)]
+        [DataMember(Name="servers", EmitDefaultValue=false)]
         public TagServers Servers { get; set; }
 
         /// <summary>

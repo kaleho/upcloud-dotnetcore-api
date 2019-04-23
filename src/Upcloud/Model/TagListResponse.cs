@@ -40,7 +40,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Tags
         /// </summary>
-        [DataMember(Name="tags", EmitDefaultValue=true)]
+        [DataMember(Name="tags", EmitDefaultValue=false)]
         public TagListResponseTags Tags { get; set; }
 
         /// <summary>

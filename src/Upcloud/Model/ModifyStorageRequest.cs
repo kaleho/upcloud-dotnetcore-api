@@ -40,7 +40,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Storage
         /// </summary>
-        [DataMember(Name="storage", EmitDefaultValue=true)]
+        [DataMember(Name="storage", EmitDefaultValue=false)]
         public Storage Storage { get; set; }
 
         /// <summary>

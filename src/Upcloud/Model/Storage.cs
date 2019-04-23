@@ -31,22 +31,22 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Access
         /// </summary>
-        [DataMember(Name="access", EmitDefaultValue=true)]
+        [DataMember(Name="access", EmitDefaultValue=false)]
         public StorageAccessType? Access { get; set; }
         /// <summary>
         /// Gets or Sets State
         /// </summary>
-        [DataMember(Name="state", EmitDefaultValue=true)]
+        [DataMember(Name="state", EmitDefaultValue=false)]
         public StorageState? State { get; set; }
         /// <summary>
         /// Gets or Sets Tier
         /// </summary>
-        [DataMember(Name="tier", EmitDefaultValue=true)]
+        [DataMember(Name="tier", EmitDefaultValue=false)]
         public StorageTier? Tier { get; set; }
         /// <summary>
         /// Gets or Sets Type
         /// </summary>
-        [DataMember(Name="type", EmitDefaultValue=true)]
+        [DataMember(Name="type", EmitDefaultValue=false)]
         public StorageType? Type { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="Storage" /> class.
@@ -89,31 +89,31 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets BackupRule
         /// </summary>
-        [DataMember(Name="backup_rule", EmitDefaultValue=true)]
+        [DataMember(Name="backup_rule", EmitDefaultValue=false)]
         public BackupRule BackupRule { get; set; }
 
         /// <summary>
         /// Gets or Sets Backups
         /// </summary>
-        [DataMember(Name="backups", EmitDefaultValue=true)]
+        [DataMember(Name="backups", EmitDefaultValue=false)]
         public StorageBackups Backups { get; set; }
 
         /// <summary>
         /// Gets or Sets License
         /// </summary>
-        [DataMember(Name="license", EmitDefaultValue=true)]
+        [DataMember(Name="license", EmitDefaultValue=false)]
         public decimal? License { get; set; }
 
         /// <summary>
         /// Gets or Sets Servers
         /// </summary>
-        [DataMember(Name="servers", EmitDefaultValue=true)]
+        [DataMember(Name="servers", EmitDefaultValue=false)]
         public StorageServers Servers { get; set; }
 
         /// <summary>
         /// Gets or Sets Size
         /// </summary>
-        [DataMember(Name="size", EmitDefaultValue=true)]
+        [DataMember(Name="size", EmitDefaultValue=false)]
         public decimal? Size { get; set; }
 
 
@@ -121,38 +121,38 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Title
         /// </summary>
-        [DataMember(Name="title", EmitDefaultValue=true)]
+        [DataMember(Name="title", EmitDefaultValue=false)]
         public string Title { get; set; }
 
 
         /// <summary>
         /// Gets or Sets Uuid
         /// </summary>
-        [DataMember(Name="uuid", EmitDefaultValue=true)]
+        [DataMember(Name="uuid", EmitDefaultValue=false)]
         public Guid? Uuid { get; set; }
 
         /// <summary>
         /// Gets or Sets Zone
         /// </summary>
-        [DataMember(Name="zone", EmitDefaultValue=true)]
+        [DataMember(Name="zone", EmitDefaultValue=false)]
         public string Zone { get; set; }
 
         /// <summary>
         /// Gets or Sets Origin
         /// </summary>
-        [DataMember(Name="origin", EmitDefaultValue=true)]
+        [DataMember(Name="origin", EmitDefaultValue=false)]
         public Guid? Origin { get; set; }
 
         /// <summary>
         /// Gets or Sets Progress
         /// </summary>
-        [DataMember(Name="progress", EmitDefaultValue=true)]
+        [DataMember(Name="progress", EmitDefaultValue=false)]
         public decimal? Progress { get; set; }
 
         /// <summary>
         /// Gets or Sets Created
         /// </summary>
-        [DataMember(Name="created", EmitDefaultValue=true)]
+        [DataMember(Name="created", EmitDefaultValue=false)]
         public string Created { get; set; }
 
         /// <summary>

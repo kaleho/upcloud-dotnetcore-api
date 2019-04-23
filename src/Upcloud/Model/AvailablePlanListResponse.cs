@@ -40,7 +40,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Plans
         /// </summary>
-        [DataMember(Name="plans", EmitDefaultValue=true)]
+        [DataMember(Name="plans", EmitDefaultValue=false)]
         public AvailablePlanListResponsePlans Plans { get; set; }
 
         /// <summary>

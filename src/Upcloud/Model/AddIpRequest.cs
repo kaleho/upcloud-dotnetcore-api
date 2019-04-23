@@ -40,7 +40,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets IpAddress
         /// </summary>
-        [DataMember(Name="ip_address", EmitDefaultValue=true)]
+        [DataMember(Name="ip_address", EmitDefaultValue=false)]
         public IpAddress IpAddress { get; set; }
 
         /// <summary>

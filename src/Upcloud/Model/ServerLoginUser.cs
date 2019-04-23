@@ -51,7 +51,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets CreatePassword
         /// </summary>
-        [DataMember(Name="create_password", EmitDefaultValue=true)]
+        [DataMember(Name="create_password", EmitDefaultValue=false)]
         public CreatePasswordEnum? CreatePassword { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="ServerLoginUser" /> class.
@@ -78,13 +78,13 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Username
         /// </summary>
-        [DataMember(Name="username", EmitDefaultValue=true)]
+        [DataMember(Name="username", EmitDefaultValue=false)]
         public string Username { get; set; }
 
         /// <summary>
         /// Gets or Sets SshKeys
         /// </summary>
-        [DataMember(Name="ssh_keys", EmitDefaultValue=true)]
+        [DataMember(Name="ssh_keys", EmitDefaultValue=false)]
         public ServerLoginUserSshKeys SshKeys { get; set; }
 
         /// <summary>

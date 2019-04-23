@@ -40,7 +40,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets SshKey
         /// </summary>
-        [DataMember(Name="ssh_key", EmitDefaultValue=true)]
+        [DataMember(Name="ssh_key", EmitDefaultValue=false)]
         public List<string> SshKey { get; set; }
 
         /// <summary>

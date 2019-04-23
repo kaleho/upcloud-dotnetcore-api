@@ -40,7 +40,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Server
         /// </summary>
-        [DataMember(Name="server", EmitDefaultValue=true)]
+        [DataMember(Name="server", EmitDefaultValue=false)]
         public List<Server> Server { get; set; }
 
         /// <summary>

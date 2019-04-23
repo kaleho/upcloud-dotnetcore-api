@@ -53,7 +53,7 @@ namespace Upcloud.Model
         /// Restart type
         /// </summary>
         /// <value>Restart type</value>
-        [DataMember(Name="stop_type", EmitDefaultValue=true)]
+        [DataMember(Name="stop_type", EmitDefaultValue=false)]
         public StopTypeEnum? StopType { get; set; }
         /// <summary>
         /// Action to take if timeout limit is exceeded.
@@ -80,7 +80,7 @@ namespace Upcloud.Model
         /// Action to take if timeout limit is exceeded.
         /// </summary>
         /// <value>Action to take if timeout limit is exceeded.</value>
-        [DataMember(Name="timeout_action", EmitDefaultValue=true)]
+        [DataMember(Name="timeout_action", EmitDefaultValue=false)]
         public TimeoutActionEnum? TimeoutAction { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="RestartServer" /> class.
@@ -116,7 +116,7 @@ namespace Upcloud.Model
         /// Stop timeout in seconds
         /// </summary>
         /// <value>Stop timeout in seconds</value>
-        [DataMember(Name="timeout", EmitDefaultValue=true)]
+        [DataMember(Name="timeout", EmitDefaultValue=false)]
         public decimal? Timeout { get; set; }
 
 

@@ -53,7 +53,7 @@ namespace Upcloud.Model
         /// Type of stop operation performed on the server.
         /// </summary>
         /// <value>Type of stop operation performed on the server.</value>
-        [DataMember(Name="stop_type", EmitDefaultValue=true)]
+        [DataMember(Name="stop_type", EmitDefaultValue=false)]
         public StopTypeEnum? StopType { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="StopServerRequest" /> class.
@@ -79,7 +79,7 @@ namespace Upcloud.Model
         /// The stop timeout in seconds.
         /// </summary>
         /// <value>The stop timeout in seconds.</value>
-        [DataMember(Name="timeout", EmitDefaultValue=true)]
+        [DataMember(Name="timeout", EmitDefaultValue=false)]
         public decimal? Timeout { get; set; }
 
         /// <summary>

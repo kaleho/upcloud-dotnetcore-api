@@ -53,7 +53,7 @@ namespace Upcloud.Model
         /// Is address for private or public network.
         /// </summary>
         /// <value>Is address for private or public network.</value>
-        [DataMember(Name="access", EmitDefaultValue=true)]
+        [DataMember(Name="access", EmitDefaultValue=false)]
         public AccessEnum? Access { get; set; }
         /// <summary>
         /// The address family of new IP address.
@@ -80,7 +80,7 @@ namespace Upcloud.Model
         /// The address family of new IP address.
         /// </summary>
         /// <value>The address family of new IP address.</value>
-        [DataMember(Name="family", EmitDefaultValue=true)]
+        [DataMember(Name="family", EmitDefaultValue=false)]
         public FamilyEnum? Family { get; set; }
         /// <summary>
         /// Defines PartOfPlan
@@ -105,7 +105,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets PartOfPlan
         /// </summary>
-        [DataMember(Name="part_of_plan", EmitDefaultValue=true)]
+        [DataMember(Name="part_of_plan", EmitDefaultValue=false)]
         public PartOfPlanEnum? PartOfPlan { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="IpAddress" /> class.
@@ -146,20 +146,20 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Address
         /// </summary>
-        [DataMember(Name="address", EmitDefaultValue=true)]
+        [DataMember(Name="address", EmitDefaultValue=false)]
         public string Address { get; set; }
 
 
         /// <summary>
         /// Gets or Sets PtrRecord
         /// </summary>
-        [DataMember(Name="ptr_record", EmitDefaultValue=true)]
+        [DataMember(Name="ptr_record", EmitDefaultValue=false)]
         public string PtrRecord { get; set; }
 
         /// <summary>
         /// Gets or Sets Server
         /// </summary>
-        [DataMember(Name="server", EmitDefaultValue=true)]
+        [DataMember(Name="server", EmitDefaultValue=false)]
         public Guid? Server { get; set; }
 
 

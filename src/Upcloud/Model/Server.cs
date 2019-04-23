@@ -65,7 +65,7 @@ namespace Upcloud.Model
         /// The storage device boot order.
         /// </summary>
         /// <value>The storage device boot order.</value>
-        [DataMember(Name="boot_order", EmitDefaultValue=true)]
+        [DataMember(Name="boot_order", EmitDefaultValue=false)]
         public BootOrderEnum? BootOrder { get; set; }
         /// <summary>
         /// The state of the server firewall rules.
@@ -92,7 +92,7 @@ namespace Upcloud.Model
         /// The state of the server firewall rules.
         /// </summary>
         /// <value>The state of the server firewall rules.</value>
-        [DataMember(Name="firewall", EmitDefaultValue=true)]
+        [DataMember(Name="firewall", EmitDefaultValue=false)]
         public FirewallEnum? Firewall { get; set; }
         /// <summary>
         /// The model of the server&#39;s network interfaces.
@@ -125,7 +125,7 @@ namespace Upcloud.Model
         /// The model of the server&#39;s network interfaces.
         /// </summary>
         /// <value>The model of the server&#39;s network interfaces.</value>
-        [DataMember(Name="nic_model", EmitDefaultValue=true)]
+        [DataMember(Name="nic_model", EmitDefaultValue=false)]
         public NicModelEnum? NicModel { get; set; }
         /// <summary>
         /// The delivery method for the server&#39;s root password.
@@ -158,12 +158,12 @@ namespace Upcloud.Model
         /// The delivery method for the server&#39;s root password.
         /// </summary>
         /// <value>The delivery method for the server&#39;s root password.</value>
-        [DataMember(Name="password_delivery", EmitDefaultValue=true)]
+        [DataMember(Name="password_delivery", EmitDefaultValue=false)]
         public PasswordDeliveryEnum? PasswordDelivery { get; set; }
         /// <summary>
         /// Gets or Sets State
         /// </summary>
-        [DataMember(Name="state", EmitDefaultValue=true)]
+        [DataMember(Name="state", EmitDefaultValue=false)]
         public ServerState? State { get; set; }
         /// <summary>
         /// The model of the server&#39;s video interface.
@@ -190,7 +190,7 @@ namespace Upcloud.Model
         /// The model of the server&#39;s video interface.
         /// </summary>
         /// <value>The model of the server&#39;s video interface.</value>
-        [DataMember(Name="video_model", EmitDefaultValue=true)]
+        [DataMember(Name="video_model", EmitDefaultValue=false)]
         public VideoModelEnum? VideoModel { get; set; }
         /// <summary>
         /// The state of the VNC remote access service.
@@ -217,7 +217,7 @@ namespace Upcloud.Model
         /// The state of the VNC remote access service.
         /// </summary>
         /// <value>The state of the VNC remote access service.</value>
-        [DataMember(Name="vnc", EmitDefaultValue=true)]
+        [DataMember(Name="vnc", EmitDefaultValue=false)]
         public VncEnum? Vnc { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="Server" /> class.
@@ -335,52 +335,52 @@ namespace Upcloud.Model
         /// The number of CPU cores dedicated to the server. See List server configurations.
         /// </summary>
         /// <value>The number of CPU cores dedicated to the server. See List server configurations.</value>
-        [DataMember(Name="core_number", EmitDefaultValue=true)]
+        [DataMember(Name="core_number", EmitDefaultValue=false)]
         public decimal? CoreNumber { get; set; }
 
 
         /// <summary>
         /// Gets or Sets Host
         /// </summary>
-        [DataMember(Name="host", EmitDefaultValue=true)]
+        [DataMember(Name="host", EmitDefaultValue=false)]
         public decimal? Host { get; set; }
 
         /// <summary>
         /// Gets or Sets AvoidHost
         /// </summary>
-        [DataMember(Name="avoid_host", EmitDefaultValue=true)]
+        [DataMember(Name="avoid_host", EmitDefaultValue=false)]
         public decimal? AvoidHost { get; set; }
 
         /// <summary>
         /// A valid hostname, e.g. host.example.com. The maximum length is 128 characters.
         /// </summary>
         /// <value>A valid hostname, e.g. host.example.com. The maximum length is 128 characters.</value>
-        [DataMember(Name="hostname", EmitDefaultValue=true)]
+        [DataMember(Name="hostname", EmitDefaultValue=false)]
         public string Hostname { get; set; }
 
         /// <summary>
         /// Gets or Sets IpAddresses
         /// </summary>
-        [DataMember(Name="ip_addresses", EmitDefaultValue=true)]
+        [DataMember(Name="ip_addresses", EmitDefaultValue=false)]
         public IpAddresses IpAddresses { get; set; }
 
         /// <summary>
         /// Gets or Sets License
         /// </summary>
-        [DataMember(Name="license", EmitDefaultValue=true)]
+        [DataMember(Name="license", EmitDefaultValue=false)]
         public decimal? License { get; set; }
 
         /// <summary>
         /// Gets or Sets LoginUser
         /// </summary>
-        [DataMember(Name="login_user", EmitDefaultValue=true)]
+        [DataMember(Name="login_user", EmitDefaultValue=false)]
         public ServerLoginUser LoginUser { get; set; }
 
         /// <summary>
         /// The amount of main memory in megabytes. See List server configurations.
         /// </summary>
         /// <value>The amount of main memory in megabytes. See List server configurations.</value>
-        [DataMember(Name="memory_amount", EmitDefaultValue=true)]
+        [DataMember(Name="memory_amount", EmitDefaultValue=false)]
         public decimal? MemoryAmount { get; set; }
 
 
@@ -389,59 +389,59 @@ namespace Upcloud.Model
         /// The pricing plan used. If a plan is selected, the core_number and  memory_amount must match the plan if they are present.
         /// </summary>
         /// <value>The pricing plan used. If a plan is selected, the core_number and  memory_amount must match the plan if they are present.</value>
-        [DataMember(Name="plan", EmitDefaultValue=true)]
+        [DataMember(Name="plan", EmitDefaultValue=false)]
         public string Plan { get; set; }
 
         /// <summary>
         /// Gets or Sets PlanIpv4Bytes
         /// </summary>
-        [DataMember(Name="plan_ipv4_bytes", EmitDefaultValue=true)]
+        [DataMember(Name="plan_ipv4_bytes", EmitDefaultValue=false)]
         public decimal? PlanIpv4Bytes { get; set; }
 
         /// <summary>
         /// Gets or Sets PlanIpv6Bytes
         /// </summary>
-        [DataMember(Name="plan_ipv6_bytes", EmitDefaultValue=true)]
+        [DataMember(Name="plan_ipv6_bytes", EmitDefaultValue=false)]
         public decimal? PlanIpv6Bytes { get; set; }
 
 
         /// <summary>
         /// Gets or Sets StorageDevices
         /// </summary>
-        [DataMember(Name="storage_devices", EmitDefaultValue=true)]
+        [DataMember(Name="storage_devices", EmitDefaultValue=false)]
         public ServerStorageDevices StorageDevices { get; set; }
 
         /// <summary>
         /// Gets or Sets Tags
         /// </summary>
-        [DataMember(Name="tags", EmitDefaultValue=true)]
+        [DataMember(Name="tags", EmitDefaultValue=false)]
         public ServerTags Tags { get; set; }
 
         /// <summary>
         /// A timezone identifier, e.g. Europe/Helsinki. See Timezones.
         /// </summary>
         /// <value>A timezone identifier, e.g. Europe/Helsinki. See Timezones.</value>
-        [DataMember(Name="timezone", EmitDefaultValue=true)]
+        [DataMember(Name="timezone", EmitDefaultValue=false)]
         public string Timezone { get; set; }
 
         /// <summary>
         /// A short description.
         /// </summary>
         /// <value>A short description.</value>
-        [DataMember(Name="title", EmitDefaultValue=true)]
+        [DataMember(Name="title", EmitDefaultValue=false)]
         public string Title { get; set; }
 
         /// <summary>
         /// Defines URL for a server setup script, or the script body itself.
         /// </summary>
         /// <value>Defines URL for a server setup script, or the script body itself.</value>
-        [DataMember(Name="user_data", EmitDefaultValue=true)]
+        [DataMember(Name="user_data", EmitDefaultValue=false)]
         public string UserData { get; set; }
 
         /// <summary>
         /// Gets or Sets Uuid
         /// </summary>
-        [DataMember(Name="uuid", EmitDefaultValue=true)]
+        [DataMember(Name="uuid", EmitDefaultValue=false)]
         public Guid? Uuid { get; set; }
 
 
@@ -449,26 +449,26 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets VncHost
         /// </summary>
-        [DataMember(Name="vnc_host", EmitDefaultValue=true)]
+        [DataMember(Name="vnc_host", EmitDefaultValue=false)]
         public string VncHost { get; set; }
 
         /// <summary>
         /// The VNC remote access password.
         /// </summary>
         /// <value>The VNC remote access password.</value>
-        [DataMember(Name="vnc_password", EmitDefaultValue=true)]
+        [DataMember(Name="vnc_password", EmitDefaultValue=false)]
         public string VncPassword { get; set; }
 
         /// <summary>
         /// Gets or Sets VncPort
         /// </summary>
-        [DataMember(Name="vnc_port", EmitDefaultValue=true)]
+        [DataMember(Name="vnc_port", EmitDefaultValue=false)]
         public string VncPort { get; set; }
 
         /// <summary>
         /// Gets or Sets Zone
         /// </summary>
-        [DataMember(Name="zone", EmitDefaultValue=true)]
+        [DataMember(Name="zone", EmitDefaultValue=false)]
         public string Zone { get; set; }
 
         /// <summary>

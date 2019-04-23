@@ -50,37 +50,37 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets CoreNumber
         /// </summary>
-        [DataMember(Name="core_number", EmitDefaultValue=true)]
+        [DataMember(Name="core_number", EmitDefaultValue=false)]
         public decimal? CoreNumber { get; set; }
 
         /// <summary>
         /// Gets or Sets MemoryAmount
         /// </summary>
-        [DataMember(Name="memory_amount", EmitDefaultValue=true)]
+        [DataMember(Name="memory_amount", EmitDefaultValue=false)]
         public decimal? MemoryAmount { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name="name", EmitDefaultValue=true)]
+        [DataMember(Name="name", EmitDefaultValue=false)]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets or Sets PublicTrafficOut
         /// </summary>
-        [DataMember(Name="public_traffic_out", EmitDefaultValue=true)]
+        [DataMember(Name="public_traffic_out", EmitDefaultValue=false)]
         public string PublicTrafficOut { get; set; }
 
         /// <summary>
         /// Gets or Sets StorageSize
         /// </summary>
-        [DataMember(Name="storage_size", EmitDefaultValue=true)]
+        [DataMember(Name="storage_size", EmitDefaultValue=false)]
         public string StorageSize { get; set; }
 
         /// <summary>
         /// Gets or Sets StorageTier
         /// </summary>
-        [DataMember(Name="storage_tier", EmitDefaultValue=true)]
+        [DataMember(Name="storage_tier", EmitDefaultValue=false)]
         public string StorageTier { get; set; }
 
         /// <summary>

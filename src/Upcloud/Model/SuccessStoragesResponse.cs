@@ -40,7 +40,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Storages
         /// </summary>
-        [DataMember(Name="storages", EmitDefaultValue=true)]
+        [DataMember(Name="storages", EmitDefaultValue=false)]
         public SuccessStoragesResponseStorages Storages { get; set; }
 
         /// <summary>

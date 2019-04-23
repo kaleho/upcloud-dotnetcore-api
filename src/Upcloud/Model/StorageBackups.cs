@@ -40,7 +40,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Backup
         /// </summary>
-        [DataMember(Name="backup", EmitDefaultValue=true)]
+        [DataMember(Name="backup", EmitDefaultValue=false)]
         public List<string> Backup { get; set; }
 
         /// <summary>

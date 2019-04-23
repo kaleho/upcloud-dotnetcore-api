@@ -40,7 +40,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Timezones
         /// </summary>
-        [DataMember(Name="timezones", EmitDefaultValue=true)]
+        [DataMember(Name="timezones", EmitDefaultValue=false)]
         public TimezoneListResponseTimezones Timezones { get; set; }
 
         /// <summary>

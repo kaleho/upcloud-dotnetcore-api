@@ -40,7 +40,7 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets Prices
         /// </summary>
-        [DataMember(Name="prices", EmitDefaultValue=true)]
+        [DataMember(Name="prices", EmitDefaultValue=false)]
         public PriceListResponsePrices Prices { get; set; }
 
         /// <summary>

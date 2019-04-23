@@ -31,12 +31,12 @@ namespace Upcloud.Model
         /// <summary>
         /// Gets or Sets ErrorCode
         /// </summary>
-        [DataMember(Name="error_code", EmitDefaultValue=true)]
+        [DataMember(Name="error_code", EmitDefaultValue=false)]
         public ErrorCode? ErrorCode { get; set; }
         /// <summary>
         /// Gets or Sets ErrorStatus
         /// </summary>
-        [DataMember(Name="error_status", EmitDefaultValue=true)]
+        [DataMember(Name="error_status", EmitDefaultValue=false)]
         public ErrorStatus? ErrorStatus { get; set; }
         /// <summary>
         /// Initializes a new instance of the <see cref="ErrorError" /> class.

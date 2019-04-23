@@ -41,7 +41,7 @@ namespace Upcloud.Model
         /// The UUID of the storage to be loaded in the CD-ROM device.
         /// </summary>
         /// <value>The UUID of the storage to be loaded in the CD-ROM device.</value>
-        [DataMember(Name="storage", EmitDefaultValue=true)]
+        [DataMember(Name="storage", EmitDefaultValue=false)]
         public Guid? Storage { get; set; }
 
         /// <summary>
