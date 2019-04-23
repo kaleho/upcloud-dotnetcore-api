@@ -176,15 +176,7 @@ namespace Upcloud.Model
         public StorageDevice(string title = default(string), BootDiskEnum? bootDisk = null, decimal? size = default(decimal?), TierEnum? tier = TierEnum.Hdd, ActionEnum? action = default(ActionEnum?), string address = default(string), PartOfPlanEnum? partOfPlan = default(PartOfPlanEnum?), string storage = default(string), decimal? storageSize = default(decimal?), string storageTitle = default(string), TypeEnum? type = TypeEnum.Disk)
         {
             this.Title = title;
-            // use default value if no "bootDisk" provided
-            if (bootDisk == null)
-            {
-                this.BootDisk = BootDiskEnum._0;
-            }
-            else
-            {
-                this.BootDisk = bootDisk;
-            }
+            this.BootDisk = bootDisk;
             this.Size = size;
             // use default value if no "tier" provided
             if (tier == null)
