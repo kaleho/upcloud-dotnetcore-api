@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.0;net47</TargetFrameworks>
+    <RootNamespace>Upcloud</RootNamespace>
+    <PackageId>Upcloud</PackageId>
+    <Authors>Openlogic.io</Authors>
+    <Description>Model, request, and response classes that support the Upcloud API</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Copyright>MIT Licesned.</Copyright>
+    <Version>1.2.8</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FubarCoder.RestSharp.Portable.Core" Version="4.0.7" />
+    <PackageReference Include="FubarCoder.RestSharp.Portable.HttpClient" Version="4.0.7" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.5.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="JsonSubTypes" Version="1.2.0" />
+  </ItemGroup>
+
+</Project>
