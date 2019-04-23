@@ -112,7 +112,8 @@ namespace Upcloud.Client
         {
             UserAgent = "Swagger-Codegen/1.2.8/csharp";
             BasePath = "https://api.upcloud.com/1.2";
-            DefaultHeader = new ConcurrentDictionary<string, string>();
+            DefaultHeader = new ConcurrentDictionary<string, string>(
+                new[] {new KeyValuePair<string, string>("Content-Type", "application/json")});
             ApiKey = new ConcurrentDictionary<string, string>();
             ApiKeyPrefix = new ConcurrentDictionary<string, string>();
 

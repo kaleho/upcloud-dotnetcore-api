@@ -13,7 +13,7 @@ variables:
   BuildPlatform: 'Any CPU'
   BuildConfiguration: 'Release'
   RootNamespace: 'Upcloud'
-  Version: '1.2.8.1'
+  Version: '1.2.8.2'
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
 
 

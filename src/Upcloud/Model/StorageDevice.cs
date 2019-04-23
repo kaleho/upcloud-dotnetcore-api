@@ -163,7 +163,7 @@ namespace Upcloud.Model
         /// Initializes a new instance of the <see cref="StorageDevice" /> class.
         /// </summary>
         /// <param name="title">title.</param>
-        /// <param name="bootDisk">bootDisk (default to BootDiskEnum._0).</param>
+        /// <param name="bootDisk">bootDisk (default to null).</param>
         /// <param name="size">The size of the storage device in gigabytes..</param>
         /// <param name="tier">tier (default to TierEnum.Hdd).</param>
         /// <param name="action">action.</param>
@@ -173,7 +173,7 @@ namespace Upcloud.Model
         /// <param name="storageSize">storageSize.</param>
         /// <param name="storageTitle">storageTitle.</param>
         /// <param name="type">type (default to TypeEnum.Disk).</param>
-        public StorageDevice(string title = default(string), BootDiskEnum? bootDisk = BootDiskEnum._0, decimal? size = default(decimal?), TierEnum? tier = TierEnum.Hdd, ActionEnum? action = default(ActionEnum?), string address = default(string), PartOfPlanEnum? partOfPlan = default(PartOfPlanEnum?), string storage = default(string), decimal? storageSize = default(decimal?), string storageTitle = default(string), TypeEnum? type = TypeEnum.Disk)
+        public StorageDevice(string title = default(string), BootDiskEnum? bootDisk = null, decimal? size = default(decimal?), TierEnum? tier = TierEnum.Hdd, ActionEnum? action = default(ActionEnum?), string address = default(string), PartOfPlanEnum? partOfPlan = default(PartOfPlanEnum?), string storage = default(string), decimal? storageSize = default(decimal?), string storageTitle = default(string), TypeEnum? type = TypeEnum.Disk)
         {
             this.Title = title;
             // use default value if no "bootDisk" provided
