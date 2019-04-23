@@ -30,7 +30,7 @@ steps:
   inputs:
     command: restore
     projects: '**/*.csproj'
-    vstsFeed: '5b196d6e-b98f-4738-8bb4-097767bb2372'
+    vstsFeed: 'a8b3d0f2-9305-400a-b114-769866183fff'
     includeNuGetOrg: false
 
 - task: DotNetCoreCLI@2
@@ -58,4 +58,4 @@ steps:
   displayName: 'dotnet push'
   inputs:
     command: push
-    publishVstsFeed: '5b196d6e-b98f-4738-8bb4-097767bb2372'
+    publishVstsFeed: 'a8b3d0f2-9305-400a-b114-769866183fff'
